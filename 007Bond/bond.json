@@ -1,0 +1,32 @@
+[
+  {
+    "name": "Sean Connery", 
+    "active": "1962-67; 1971",
+    "image": "sean_connery"
+  },
+  {
+    "name": "George Lazenby", 
+    "active": "1969",
+    "image": "george_lazenby"
+  },
+  {
+    "name": "Roger Moore", 
+    "active": "1973-85",
+    "image": "roger_moore"
+  },
+  {
+    "name": "Timothy Dalton", 
+    "active": "1987-89",
+    "image": "timothy_dalton"
+  },
+  {
+    "name": "Pierce Brosnan", 
+    "active": "1995-2002",
+    "image": "pierce_brosnan"
+  },
+  {
+    "name": "Daniel Craig", 
+    "active": "2006-21",
+    "image": "daniel_craig"
+  }
+]
