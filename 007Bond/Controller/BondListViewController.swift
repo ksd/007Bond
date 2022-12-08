@@ -22,6 +22,13 @@ class BondListViewController: UIViewController {
         super.viewDidLoad()
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "bondDetailSegue" {
+            let destination = segue.destination as! BondViewController
+            destination.bondService = bondService
+        }
+    }
+    
     
 }
 
