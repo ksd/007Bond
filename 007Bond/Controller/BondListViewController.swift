@@ -33,8 +33,9 @@ class BondListViewController: UIViewController {
     }
     
     @IBAction func unwindFromBondDetailViewController(segue: UIStoryboardSegue) {
-        //let newBond = (segue.destination as! BondViewController).bond
+        let newBond = (segue.source as! BondViewController).bond
         //bondService?.listOfBonds[bondListTableView.indexPathForSelectedRow!.row] = newBond
+        print("der er kommet en bond tilbage med navn: \(newBond!.name)")
     }
     
     
