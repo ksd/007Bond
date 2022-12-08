@@ -25,8 +25,16 @@ class BondListViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "bondDetailSegue" {
             let destination = segue.destination as! BondViewController
-            destination.bondService = bondService
+            let bondIndex = bondListTableView.indexPathForSelectedRow!.row
+            let bond = bondService?.listOfBonds[bondIndex]
+            destination.bond = bond
+            //destination.bondService = bondService
         }
+    }
+    
+    @IBAction func unwindFromBondDetailViewController(segue: UIStoryboardSegue) {
+        //let newBond = (segue.destination as! BondViewController).bond
+        //bondService?.listOfBonds[bondListTableView.indexPathForSelectedRow!.row] = newBond
     }
     
     

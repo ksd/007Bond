@@ -72,7 +72,13 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="k7T-AX-9Ou" secondAttribute="trailing" id="ryx-Of-Vdq"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="aBQ-01-Gwu"/>
+                    <navigationItem key="navigationItem" id="aBQ-01-Gwu">
+                        <barButtonItem key="rightBarButtonItem" title="Save" image="person.crop.circle.badge.checkmark" catalog="system" id="EoU-UI-vzI">
+                            <connections>
+                                <segue destination="Wmo-j1-Y1U" kind="unwind" unwindAction="unwindFromBondDetailViewControllerWithSegue:" id="bzH-WI-oOD"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="bondActiveLabel" destination="PNg-fm-LuW" id="oa8-TX-UB4"/>
                         <outlet property="bondImageView" destination="k7T-AX-9Ou" id="T9H-J2-mgM"/>
@@ -80,6 +86,7 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <exit id="Wmo-j1-Y1U" userLabel="Exit" sceneMemberID="exit"/>
                 <tapGestureRecognizer numberOfTapsRequired="2" id="WLf-ZI-86f">
                     <connections>
                         <action selector="bondTap:" destination="BYZ-38-t0r" id="WIW-tw-Rkn"/>
@@ -167,6 +174,7 @@
     </scenes>
     <resources>
         <image name="JamesBondLogo" width="383" height="129"/>
+        <image name="person.crop.circle.badge.checkmark" catalog="system" width="128" height="114"/>
         <image name="sean_connery" width="138" height="750"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
